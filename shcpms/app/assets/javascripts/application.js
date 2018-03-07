@@ -10,6 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//The order of these was stopping my bootstrap collapsible nav!!!!
+//= require jquery_ujs
+//= require jquery
+//= require turbolinks
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
