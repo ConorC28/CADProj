@@ -6,6 +6,8 @@
 	<%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>	
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
@@ -25,7 +27,7 @@
 	
 		<div class="collapse navbar-collapse" id="myNavbar"> 
 			<ul class="nav navbar-nav">
-			<li><%= link_to "Your health is our health", home_path %></li>
+			<li><%= link_to "I.M.H.", about_path %></li>
 			  <li><%= link_to "Home", home_path %></li>
 			  <li><%= link_to "About", about_path %></li>
 			  <li><%= link_to "Patients", patientspage_path %></li>
@@ -36,7 +38,6 @@
 	
  
     <%= yield %>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		
   </body>
 </html>
