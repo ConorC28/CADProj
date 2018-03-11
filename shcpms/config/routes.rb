@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   get 'index' => 'welcome#index'
    
-  get 'patientspage' => 'pages#patientspage', as: 'patientspage'
+  get 'patientspage' => 'patients#patientspage', as: 'patientspage'
   
   get 'welcome/index'
+  
+  #resources :patients
   
   root 'welcome#index', as: 'home'
   
